@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		47601B2722CB5F1100ED158B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47601B2622CB5F1100ED158B /* AppDelegate.swift */; };
-		47601B2922CB5F1100ED158B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47601B2822CB5F1100ED158B /* ViewController.swift */; };
 		47601B2C22CB5F1100ED158B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47601B2A22CB5F1100ED158B /* Main.storyboard */; };
 		47601B2F22CB5F1100ED158B /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47601B2D22CB5F1100ED158B /* Notes.xcdatamodeld */; };
 		47601B3122CB5F1400ED158B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47601B3022CB5F1400ED158B /* Assets.xcassets */; };
 		47601B3422CB5F1400ED158B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47601B3222CB5F1400ED158B /* LaunchScreen.storyboard */; };
+		47601B3F22CB68E800ED158B /* NoteAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47601B3E22CB68E800ED158B /* NoteAllViewController.swift */; };
+		47601B4122CB68F700ED158B /* NoteEachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47601B4022CB68F700ED158B /* NoteEachViewController.swift */; };
+		47601B4322CB690900ED158B /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47601B4222CB690900ED158B /* UserLoginViewController.swift */; };
+		47601B4522CB692100ED158B /* UserRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47601B4422CB692100ED158B /* UserRegisterViewController.swift */; };
+		47601B4722CB693500ED158B /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47601B4622CB693500ED158B /* UserDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47601B2322CB5F1100ED158B /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47601B2622CB5F1100ED158B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47601B2822CB5F1100ED158B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		47601B2B22CB5F1100ED158B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47601B2E22CB5F1100ED158B /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 		47601B3022CB5F1400ED158B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47601B3322CB5F1400ED158B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47601B3522CB5F1400ED158B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47601B3E22CB68E800ED158B /* NoteAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAllViewController.swift; sourceTree = "<group>"; };
+		47601B4022CB68F700ED158B /* NoteEachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEachViewController.swift; sourceTree = "<group>"; };
+		47601B4222CB690900ED158B /* UserLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
+		47601B4422CB692100ED158B /* UserRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterViewController.swift; sourceTree = "<group>"; };
+		47601B4622CB693500ED158B /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		47601B2522CB5F1100ED158B /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				47601B2622CB5F1100ED158B /* AppDelegate.swift */,
-				47601B2822CB5F1100ED158B /* ViewController.swift */,
-				47601B2A22CB5F1100ED158B /* Main.storyboard */,
+				47601B3C22CB689D00ED158B /* Model */,
+				47601B3B22CB689500ED158B /* View */,
+				47601B3D22CB68A400ED158B /* Control */,
 				47601B3022CB5F1400ED158B /* Assets.xcassets */,
-				47601B3222CB5F1400ED158B /* LaunchScreen.storyboard */,
 				47601B3522CB5F1400ED158B /* Info.plist */,
-				47601B2D22CB5F1100ED158B /* Notes.xcdatamodeld */,
 			);
 			path = Notes;
+			sourceTree = "<group>";
+		};
+		47601B3B22CB689500ED158B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47601B3222CB5F1400ED158B /* LaunchScreen.storyboard */,
+				47601B2A22CB5F1100ED158B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		47601B3C22CB689D00ED158B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47601B2D22CB5F1100ED158B /* Notes.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47601B3D22CB68A400ED158B /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				47601B2622CB5F1100ED158B /* AppDelegate.swift */,
+				47601B3E22CB68E800ED158B /* NoteAllViewController.swift */,
+				47601B4022CB68F700ED158B /* NoteEachViewController.swift */,
+				47601B4222CB690900ED158B /* UserLoginViewController.swift */,
+				47601B4422CB692100ED158B /* UserRegisterViewController.swift */,
+				47601B4622CB693500ED158B /* UserDetailViewController.swift */,
+			);
+			path = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47601B2922CB5F1100ED158B /* ViewController.swift in Sources */,
+				47601B4722CB693500ED158B /* UserDetailViewController.swift in Sources */,
+				47601B4522CB692100ED158B /* UserRegisterViewController.swift in Sources */,
+				47601B3F22CB68E800ED158B /* NoteAllViewController.swift in Sources */,
+				47601B4322CB690900ED158B /* UserLoginViewController.swift in Sources */,
+				47601B4122CB68F700ED158B /* NoteEachViewController.swift in Sources */,
 				47601B2F22CB5F1100ED158B /* Notes.xcdatamodeld in Sources */,
 				47601B2722CB5F1100ED158B /* AppDelegate.swift in Sources */,
 			);
